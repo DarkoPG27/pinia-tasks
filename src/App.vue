@@ -12,9 +12,14 @@
     </div>
 
     <!-- filter nav -->
+
     <nav class="filter">
-      <button @click="filter = 'all'">All Tasks</button>
-      <button @click="filter = 'favs'">Fav Tasks</button>
+      <button @click="filter = 'all'" :class="{ btnActive: filter == 'all' }">
+        All Tasks
+      </button>
+      <button @click="filter = 'favs'" :class="{ btnActive: filter == 'favs' }">
+        Fav Tasks
+      </button>
     </nav>
 
     <!-- loading -->
@@ -35,7 +40,7 @@
       </div>
     </div>
 
-    <button @click="taskStore.$reset">Reset</button>
+    <!--  <button @click="taskStore.$reset">Reset</button> -->
   </main>
 </template>
 

@@ -89,6 +89,10 @@ header h1 {
   font-size: 1em;
 }
 
+.btnActive {
+  background: #ffd859 !important;
+}
+
 /* new task form */
 .new-task-form {
   background: #e7e7e7;
